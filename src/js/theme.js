@@ -2,8 +2,7 @@ const Theme = {
   LIGHT: 'light-theme',
   DARK: 'dark-theme',
 };
-
-const body = document.querySelector('body');
+document.body.classList.add(Theme.LIGHT);
 const themeSwitchToggle = document.querySelector('#theme-switch-toggle');
 themeSwitchToggle.addEventListener('change', onThemeToggle);
 
